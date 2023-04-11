@@ -2,29 +2,29 @@
     <el-page-header :icon="null">
       <template #content>
         <div class="flex items-center">
-          <el-avatar
+          <!-- <el-avatar
             :size="32"
             class="mr-3"
-            src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"
-          />
-          <span class="text-large font-600 mr-3"> Title </span>
-          <span class="text-sm mr-2" style="color: var(--el-text-color-regular)">
-            Sub title
+            shape="square"
+            src="../assets/logo.png"
+          /> -->
+          <el-image style="width: 100px; height: 50px;align-items: center;" :src="url" fit="fill" />
+          <span class="text-large font-600 mr-3"> CFC </span>
+          <span class="text-sm mr-2" style="color: var(--el-text-color-regular);">
+                Message Distribute Plantform
           </span>
-          <el-tag>Default</el-tag>
         </div>
       </template>
       <template #extra>
         <div class="flex items-center">
-          <el-button>Print</el-button>
-          <el-button type="primary" class="ml-2">Edit</el-button>
+          <el-button type="primary" class="ml-2">退出</el-button>
         </div>
       </template>
     </el-page-header>
 </template>
   
 <script scope setup>
-
+    const url='https://s1.ax1x.com/2023/04/11/ppOptOJ.png'
 </script>
 
 <style scoped>

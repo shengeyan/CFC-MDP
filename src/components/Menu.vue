@@ -17,26 +17,51 @@
           <span>消息模板管理</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="1-1">新增模板</el-menu-item>
-          <el-menu-item index="1-2">模板列表</el-menu-item>
+          <el-menu-item index="1-1"><el-icon><Plus /></el-icon>新增模板</el-menu-item>
+          <el-menu-item index="1-2"><el-icon><Operation /></el-icon>模板列表</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
-      <el-menu-item index="2">
-        <el-icon><icon-menu /></el-icon>
-        <template #title>全链路追踪</template>
-      </el-menu-item>
-      <el-menu-item index="3" >
-        <el-icon><document /></el-icon>
-        <template #title>渠道物料管理</template>
-      </el-menu-item>
-      <el-menu-item index="4">
+      
+      <el-sub-menu index="2">
+        <template #title> 
+          <el-icon><icon-menu /></el-icon>
+          <span>全链路追踪</span>
+        </template>
+        <el-menu-item-group>
+            <el-menu-item index="2-1">用户全链路追踪</el-menu-item>
+            <el-menu-item index="2-2">消息模板全链路追踪</el-menu-item>
+            <el-menu-item index="2-3">离线明细全链路追踪</el-menu-item>
+            <el-menu-item index="2-4">短信下发数据查询</el-menu-item>
+        </el-menu-item-group>
+      </el-sub-menu>
+      <el-sub-menu index="3" >
+        <template #title>
+          <el-icon><document /></el-icon>
+          <span>渠道物料管理</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="3-1">素材上传</el-menu-item>
+        </el-menu-item-group>
+      </el-sub-menu>
+      <el-sub-menu index="4">
+        <template #title>
         <el-icon><setting /></el-icon>
-        <template #title>渠道账号管理</template>
-      </el-menu-item>
-      <el-menu-item index="5">
-        <el-icon><setting /></el-icon>
-        <template #title>登录注册</template>
-      </el-menu-item>
+          <span>渠道账号管理</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="4-1"><el-icon><Plus /></el-icon>新增账号</el-menu-item>
+          <el-menu-item index="4-2"><el-icon><Operation /></el-icon>渠道账号</el-menu-item>
+        </el-menu-item-group>
+      </el-sub-menu>
+      <el-sub-menu index="5">
+        <template #title>
+          <el-icon><SwitchButton /></el-icon>
+          <span>登录注册</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="5-1">用户登录</el-menu-item>
+        </el-menu-item-group>
+      </el-sub-menu>
     </el-menu>
   </template>
   
