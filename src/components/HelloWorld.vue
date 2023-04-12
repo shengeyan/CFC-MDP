@@ -13,11 +13,13 @@
         <el-container>
           <!-- 主体 -->
           <el-main>
-            <el-empty description="description" />
+            <!-- <el-empty description="description" /> -->
+            <router-link to="/"></router-link>
+            <router-view/> 
           </el-main>
           <!-- 底部 -->
           <el-footer>
-            <Bottom></Bottom>
+            <!-- <Bottom></Bottom> -->
           </el-footer>
         </el-container>
       </el-container>

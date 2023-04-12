@@ -55,7 +55,7 @@
       </el-sub-menu>
       <el-sub-menu index="5">
         <template #title>
-          <el-icon><SwitchButton /></el-icon>
+          <el-icon><Promotion /></el-icon>
           <span>登录注册</span>
         </template>
         <el-menu-item-group>
@@ -75,12 +75,8 @@
     } from '@element-plus/icons-vue'
     
     const isCollapse = ref(true)
-    const handleOpen = (key, keyPath) => {
-      console.log(key, keyPath)
-    }
-    const handleClose = (key, keyPath) => {
-      console.log(key, keyPath)
-    }
+
+
   </script>
   
   <style scoped>
