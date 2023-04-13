@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import AddTemplateVue from '../views/AddTemplate.vue'
 
 const routes = [
@@ -9,10 +8,11 @@ const routes = [
     component:AddTemplateVue,
   },
   {
-    // path: '/about',
-    // name: 'about',
-    // component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  },{
+    path: '/about',
+    name: 'about',
+    component: () => import('../views/HomeView.vue')
+  },
+  {
     path:'/',
     redirect:"/add"
   }

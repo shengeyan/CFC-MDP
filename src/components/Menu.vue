@@ -14,10 +14,10 @@
       <el-sub-menu index="1">
         <template #title>
           <el-icon><location /></el-icon>
-          <span>消息模板管理</span>
+          <span>消息模板管理{{$store.state.toRouter}}</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="1-1"><el-icon><Plus /></el-icon>新增模板</el-menu-item>
+          <el-menu-item index="1-1" @click="way('1111')" ><el-icon><Plus /></el-icon>新增模板</el-menu-item>
           <el-menu-item index="1-2"><el-icon><Operation /></el-icon>模板列表</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
@@ -62,27 +62,35 @@
           <el-menu-item index="5-1">用户登录</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
+
     </el-menu>
-  </template>
+</template>
   
-  <script scope setup>
-    import { ref } from 'vue'
+<script setup>
+    import { ref,computed } from 'vue'
     import {
       Document,
       Menu as IconMenu,
       Location,
       Setting,
     } from '@element-plus/icons-vue'
-    
+    import { useStore } from 'vuex' 
+    import { mapState } from 'vuex';
+
+    const store = useStore() 
     const isCollapse = ref(true)
 
+    const way=(string)=>{
+      alert(store.state.toRouter);
+    };
+    
 
-  </script>
+</script>
   
-  <style scoped>
+<style scoped>
     .el-menu-vertical-demo:not(.el-menu--collapse) {
       width: 200px;
       min-height: 400px;
     }
 
-  </style>
+</style>
